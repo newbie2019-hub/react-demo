@@ -4,10 +4,12 @@ import { Todos } from "../modules/Todos";
 import { DefaultLayout } from "../layouts/DefaultLayout";
 import { user } from "./user";
 import { post } from "./post";
+import { Error } from "../modules/error/Error";
 
 export const router = createBrowserRouter([
   {
     element: <DefaultLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
